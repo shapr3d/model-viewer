@@ -1,8 +1,11 @@
 {
-  "name": "@google/model-viewer",
-  "version": "1.12.0",
+  "name": "@shapr3d/model-viewer",
+  "version": "1.12.3",
   "description": "Easily display interactive 3D models on the web and in AR!",
-  "repository": "https://github.com/google/model-viewer",
+  "repository": "https://github.com/shapr3d/model-viewer",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/google/model-viewer/issues"
   },
@@ -69,7 +72,7 @@
     "3d"
   ],
   "dependencies": {
-    "three": "^0.139.2",
+    "three": "npm:@shapr3d/three@0.139.3",
     "lit": "^2.2.3"
   },
   "devDependencies": {
@@ -99,8 +102,5 @@
     "rollup-plugin-polyfill": "^3.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "4.3.5"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
